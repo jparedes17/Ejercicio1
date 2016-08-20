@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,21 +29,319 @@ public class Frame1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtInv1 = new javax.swing.JTextField();
+        txtInv2 = new javax.swing.JTextField();
+        txtInv3 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtTotal = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txtPorcn1 = new javax.swing.JTextField();
+        txtPorcn2 = new javax.swing.JTextField();
+        txtPorcn3 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setText("Inversionista 1:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setText("Inversionista 2:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("Inversionista 3:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        txtInv1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtInv1KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtInv1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 90, -1));
+
+        txtInv2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtInv2KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtInv2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 90, -1));
+
+        txtInv3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtInv3KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtInv3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 90, -1));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("Total Inversion:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        txtTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTotalActionPerformed(evt);
+            }
+        });
+        txtTotal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTotalKeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 90, -1));
+
+        jButton1.setText("Ejecutar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
+
+        jButton2.setText("Borrar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setText("Porcentaje de Inversion:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setText("Inversionista 1:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("Inversionista 2:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("Inversionista 3:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
+
+        txtPorcn1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtPorcn1KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtPorcn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 130, -1));
+
+        txtPorcn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPorcn2ActionPerformed(evt);
+            }
+        });
+        txtPorcn2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtPorcn2KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtPorcn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 130, -1));
+
+        txtPorcn3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtPorcn3KeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtPorcn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 130, -1));
+
+        jLabel9.setText("%");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 20, 20));
+
+        jLabel10.setText("%");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 20, 20));
+
+        jLabel11.setText("%");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 20, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        double inv1, inv2, inv3, resultado, op1, op2, op3, totalinv;
+        String res;
+        double porcentaje=100;
+        if (txtInv1.getText().trim().isEmpty())
+        {
+            JOptionPane.showMessageDialog(this, "Ingrese el inversor 1", "ERROR", JOptionPane.ERROR_MESSAGE);
+            txtInv1.requestFocusInWindow();
+        }
+        else if (txtInv2.getText().trim().isEmpty())
+        {
+            JOptionPane.showMessageDialog(this, "Ingrese el inversor 2", "ERROR", JOptionPane.ERROR_MESSAGE);
+            txtInv2.requestFocusInWindow();
+        }
+       if (txtInv3.getText().isEmpty())
+        {
+            JOptionPane.showMessageDialog(this, "Ingrese el inversor 3", "ERROR", JOptionPane.ERROR_MESSAGE);
+            txtInv3.requestFocusInWindow();
+        }
+        else {
+        inv1= Double.parseDouble(txtInv1.getText());
+        inv2= Double.parseDouble(txtInv2.getText());
+        inv3= Double.parseDouble(txtInv3.getText());
+        
+        totalinv= inv1+inv2+inv3;
+        op1= (inv1*porcentaje)/totalinv;
+        op2= (inv2*porcentaje)/totalinv;
+        op3= (inv3*porcentaje)/totalinv;
+        
+        res= String.valueOf(totalinv);
+        
+        txtTotal.setText(res);
+        
+        txtPorcn1.setText(""+op1);
+        txtPorcn2.setText(""+op2);
+        txtPorcn3.setText(""+op3);
+        }
+        
+        
+        
+        
+                
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtPorcn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPorcn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPorcn2ActionPerformed
+
+    private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_txtTotalActionPerformed
+
+    private void txtTotalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          if(!Character.isLetter(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume(); 
+          }
+    }//GEN-LAST:event_txtTotalKeyTyped
+
+    private void txtPorcn1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPorcn1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          if(!Character.isLetter(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume(); 
+          }
+    }//GEN-LAST:event_txtPorcn1KeyTyped
+
+    private void txtPorcn2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPorcn2KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          if(!Character.isLetter(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume(); 
+          }
+    }//GEN-LAST:event_txtPorcn2KeyTyped
+
+    private void txtPorcn3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPorcn3KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          if(!Character.isLetter(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume(); 
+          }
+    }//GEN-LAST:event_txtPorcn3KeyTyped
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        txtInv1.setText("");
+        txtInv2.setText("");
+        txtInv3.setText("");
+        txtPorcn1.setText("");
+        txtPorcn2.setText("");
+        txtPorcn3.setText("");
+        txtTotal.setText("");
+        
+        txtInv1.requestFocusInWindow();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtInv1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtInv1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          
+    }//GEN-LAST:event_txtInv1KeyTyped
+
+    private void txtInv2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtInv2KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+    }//GEN-LAST:event_txtInv2KeyTyped
+
+    private void txtInv3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtInv3KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar(); 
+          if(!Character.isDigit(c)) 
+          { 
+              getToolkit().beep(); 
+              evt.consume();      
+          }
+         
+          
+    }//GEN-LAST:event_txtInv3KeyTyped
 
     /**
      * @param args the command line arguments
@@ -58,25 +359,40 @@ public class Frame1 extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Frame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Frame1().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Frame1().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtInv1;
+    private javax.swing.JTextField txtInv2;
+    private javax.swing.JTextField txtInv3;
+    private javax.swing.JTextField txtPorcn1;
+    private javax.swing.JTextField txtPorcn2;
+    private javax.swing.JTextField txtPorcn3;
+    private javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables
 }
