@@ -178,9 +178,9 @@ public class Frame1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        double inv1, inv2, inv3, resultado, op1, op2, op3, totalinv;
+        long inv1, inv2, inv3, resultado, op1, op2, op3, totalinv;
         String res;
-        double porcentaje=100;
+        long porcentaje=100;
         if (txtInv1.getText().trim().isEmpty())
         {
             JOptionPane.showMessageDialog(this, "Ingrese el inversor 1", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -197,9 +197,9 @@ public class Frame1 extends javax.swing.JFrame {
             txtInv3.requestFocusInWindow();
         }
         else {
-        inv1= Double.parseDouble(txtInv1.getText());
-        inv2= Double.parseDouble(txtInv2.getText());
-        inv3= Double.parseDouble(txtInv3.getText());
+        inv1= Long.parseLong(txtInv1.getText());
+        inv2= Long.parseLong(txtInv2.getText());
+        inv3= Long.parseLong(txtInv3.getText());
         
         totalinv= inv1+inv2+inv3;
         op1= (inv1*porcentaje)/totalinv;
